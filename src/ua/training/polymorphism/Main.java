@@ -20,13 +20,9 @@ public class Main {
     public static final double Y1 = 3;
 
     public static void main(String[] args) {
-	    Point point = new Point();
-	    point.drawInConsole();
+	    Checker main = new Checker(RADIUS, X1, Y1);
 
-        Circle circle = new Circle(RADIUS);
-        circle.drawInConsole();
+	    main.checkInheritance();
 
-        Rectangle rectangle = new Rectangle(X1, Y1);
-        circle.drawInConsole();
     }
 }
