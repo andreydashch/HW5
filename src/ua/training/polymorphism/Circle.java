@@ -15,6 +15,16 @@ package ua.training.polymorphism;
 public class Circle extends Point {
     private double radius;
 
+    Circle(double radius) {
+        super();
+        this.radius = radius;
+    }
+
+    Circle(double x, double y, double radius) {
+        super(x,y);
+        this.radius = radius;
+    }
+
     public void setRadius(double radius) {
         this.radius = radius;
     }
