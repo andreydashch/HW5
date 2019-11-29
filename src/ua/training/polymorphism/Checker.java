@@ -33,7 +33,7 @@ public class Checker {
         circle.drawInConsole();
 
         Rectangle rectangle = new Rectangle(x1, y1);
-        circle.drawInConsole();
+        rectangle.drawInConsole();
     }
 
 }

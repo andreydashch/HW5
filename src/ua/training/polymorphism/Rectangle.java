@@ -34,10 +34,10 @@ public class Rectangle extends Point {
 
     @Override
     public String toString() {
-        return "Point{" +
+        return "Rectangle{" +
                 "x=" + getX() +
                 ", y=" + getY() +
-                "x=" + x1 +
+                ", x=" + x1 +
                 ", y=" + y1 +
                 '}';
     }
