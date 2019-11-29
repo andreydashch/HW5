@@ -22,4 +22,13 @@ public class Circle extends Point {
     public double getRadius() {
         return radius;
     }
+
+    @Override
+    public String toString() {
+        return "Circle{" +
+                "x=" + getX() +
+                ", y=" + getY() +
+                ", radius=" + radius +
+                '}';
+    }
 }
