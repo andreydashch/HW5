@@ -23,6 +23,6 @@ public class Main {
 	    Checker main = new Checker(RADIUS, X1, Y1);
 
 	    main.checkInheritance();
-
+        main.checkPolymorphism();
     }
 }

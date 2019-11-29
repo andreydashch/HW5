@@ -15,6 +15,8 @@ package ua.training.polymorphism;
  * @author      Dashchyk Andrey
  */
 public class Checker {
+    private static final String SEPARATOR=
+            "============================================";
     private double radius;
     private double x1;
     private double y1;
@@ -34,6 +36,22 @@ public class Checker {
 
         Rectangle rectangle = new Rectangle(x1, y1);
         rectangle.drawInConsole();
+        printlnSeparator();
     }
 
+    public void checkPolymorphism() {
+        Point point = new Point();
+        point.drawInConsole();
+
+        Point circle = new Circle(radius);
+        circle.drawInConsole();
+
+        Point rectangle = new Rectangle(x1, y1);
+        rectangle.drawInConsole();
+        printlnSeparator();
+    }
+
+    private void    printlnSeparator() {
+        System.out.println(SEPARATOR);
+    }
 }
