@@ -25,6 +25,10 @@ public class Point {
         this.y = y;
     }
 
+    public void drawInConsole() {
+        System.out.println("It's drawing " + this.toString());
+    }
+
     public void setX(double x) {
         this.x = x;
     }
