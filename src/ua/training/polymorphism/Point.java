@@ -16,8 +16,10 @@ public class Point {
     private double x;
     private double y;
 
+    // its more correct to make it explicit
     public Point() {
-        // Default
+        this.x = 0;
+        this.y =0;
     }
 
     public Point(double x, double y) {
