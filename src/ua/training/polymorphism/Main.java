@@ -24,5 +24,6 @@ public class Main {
 
 	    main.checkInheritance();
         main.checkPolymorphism();
+        main.checkReassign();
     }
 }

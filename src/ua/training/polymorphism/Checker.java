@@ -36,6 +36,7 @@ public class Checker {
 
         Rectangle rectangle = new Rectangle(x1, y1);
         rectangle.drawInConsole();
+
         printlnSeparator();
     }
 
@@ -48,6 +49,21 @@ public class Checker {
 
         Point rectangle = new Rectangle(x1, y1);
         rectangle.drawInConsole();
+
+        printlnSeparator();
+    }
+
+    public void checkReassign() {
+        Circle circle = new Circle(radius);
+        circle.drawInConsole();
+
+        Point circleAsPoint =circle;
+        circleAsPoint.drawInConsole();
+        System.out.println(circle.toString());
+        System.out.println(circleAsPoint.toString());
+        System.out.println(circle.getRadius());
+        //System.out.println(circleThroughPoint.getRadius());
+
         printlnSeparator();
     }
 
