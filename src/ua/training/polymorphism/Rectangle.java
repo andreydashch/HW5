@@ -31,4 +31,14 @@ public class Rectangle extends Point {
     public double getY1() {
         return y1;
     }
+
+    @Override
+    public String toString() {
+        return "Point{" +
+                "x=" + getX() +
+                ", y=" + getY() +
+                "x=" + x1 +
+                ", y=" + y1 +
+                '}';
+    }
 }
