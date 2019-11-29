@@ -55,14 +55,45 @@ public class Checker {
 
     public void checkReassign() {
         Circle circle = new Circle(radius);
-        circle.drawInConsole();
+        Point circleAsPoint;
 
-        Point circleAsPoint =circle;
+        circle.drawInConsole();
+        circleAsPoint =circle;
         circleAsPoint.drawInConsole();
         System.out.println(circle.toString());
         System.out.println(circleAsPoint.toString());
         System.out.println(circle.getRadius());
         //System.out.println(circleThroughPoint.getRadius());
+
+        printlnSeparator();
+    }
+
+    public void checkExtractionOfFields() {
+        Circle circle = new Circle(radius);
+        Point circle2 = new Circle(x1, y1, radius);
+
+        //circle2 = new Point(3,8);
+        //System.out.println(circle2.getRadius());
+        Circle pointAsCircle = (Circle) circle2;
+        System.out.println(pointAsCircle.getRadius());
+
+        printlnSeparator();
+    }
+
+    public void checkExtractionOfFieldsByLoop() {
+        Point[] points = {
+                new Point(x1, y1),
+                new Circle(x1, y1, radius),
+                new Circle(x1, y1,radius + 1),
+                new Rectangle(x1, y1)
+        };
+        for (Point currentPoint : points) {
+            //System.out.println(currentPoint);
+            if (currentPoint instanceof Circle) {
+                Circle circleDefault = (Circle) currentPoint;
+                System.out.println("radius = " + circleDefault.getRadius());
+            }
+        }
 
         printlnSeparator();
     }
