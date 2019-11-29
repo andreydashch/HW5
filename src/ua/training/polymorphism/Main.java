@@ -15,8 +15,18 @@ package ua.training.polymorphism;
  * @author      Dashchyk Andrey
  */
 public class Main {
+    public static final double RADIUS = 0.5;
+    public static final double X1 = 5;
+    public static final double Y1 = 3;
 
     public static void main(String[] args) {
-	// write your code here
+	    Point point = new Point();
+	    point.drawInConsole();
+
+        Circle circle = new Circle(RADIUS);
+        circle.drawInConsole();
+
+        Rectangle rectangle = new Rectangle(X1, Y1);
+        circle.drawInConsole();
     }
 }
